@@ -1,7 +1,6 @@
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
-import { Html, Head, Main, NextScript } from 'next/document'
-
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -14,5 +13,5 @@ export default function Document() {
         <Footer />
       </body>
     </Html>
-  )
+  );
 }
