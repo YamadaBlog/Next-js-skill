@@ -58,7 +58,7 @@ export const Header: React.FC = () => {
               </a>
             </li>
             <li>
-              <a>Settings</a>
+              <a href="/user/settings">Settings</a>
             </li>
             <li>
               <a>Logout</a>
