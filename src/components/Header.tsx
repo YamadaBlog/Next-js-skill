@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const Header: React.FC = () => {
   return (
@@ -43,7 +44,7 @@ export const Header: React.FC = () => {
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src="/imgdn.jpg" />
+              <Image src="/YamaBlog.jpg" width="3840" height="2160" alt="User Icon" />
             </div>
           </label>
           <ul
@@ -51,7 +52,7 @@ export const Header: React.FC = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a className="justify-between">
+              <a className="justify-between" href="/user/profile">
                 Profile
                 <span className="badge">New</span>
               </a>
