@@ -36,7 +36,7 @@ const UserSettingsPage: NextPage = () => {
     >
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="container mx-auto py-8">
-        <div className="bg-white p-8 rounded-lg shadow-lg">
+        <div className="bg-white p-8 m-4 rounded-lg shadow-lg">
           <h1 className="text-2xl font-semibold mb-4">User Settings</h1>
           <form onSubmit={handleSubmit}>
             <div className="space-y-4">
