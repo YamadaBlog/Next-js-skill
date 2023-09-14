@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Image from "next/image";
 
 const ProfileIndex: NextPage = () => {
   return (
@@ -16,33 +17,33 @@ const ProfileIndex: NextPage = () => {
           id="block-user"
         >
           <div className="p-4">
-            <img
-              className="w-34 h-32 rounded-full mx-auto"
+            <Image
               src="/imgdn.jpg"
+              width={200}
+              height={100}
+              className="w-34 h-32 rounded-full mx-auto"
               alt="Profile Picture"
-            ></img>
+            ></Image>
             <h1 className="text-3xl text-center font-semibold mt-4">L.</h1>
             <p className="text-gray-500 text-center">Pro Thinker</p>
           </div>
-          <div className="border-t border-gray-200">
-            <ul className="divide-y divide-gray-200">
-              <li className="p-4">
-                <span className="text-gray-500">Email:</span>
-                <span className="ml-2">L.sav@example.com</span>
-              </li>
-              <li className="p-4">
-                <span className="text-gray-500">Location:</span>
-                <span className="ml-2"> ????? </span>
-              </li>
-              <li className="p-4">
-                <span className="text-gray-500">Bio:</span>
-                <span className="ml-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  eu felis euismod, placerat est non, laoreet magna.
-                </span>
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <li className="p-4">
+              <span className="text-gray-500">Email:</span>
+              <span className="ml-2">L.sav@example.com</span>
+            </li>
+            <li className="p-4">
+              <span className="text-gray-500">Location:</span>
+              <span className="ml-2"> ????? </span>
+            </li>
+            <li className="p-4">
+              <span className="text-gray-500">Bio:</span>
+              <span className="ml-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                eu felis euismod, placerat est non, laoreet magna.
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
